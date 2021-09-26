@@ -1,0 +1,83 @@
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .img-pos{
+    margin-bottom: 10px;
+    animation: rotating 2s steps(22), blink .5s step-end infinite alternate;
+  }
+  .bg-texto{
+    background-color: #3191a1;
+  }
+
+  button{
+    background-color: black;
+    border: solid;
+    border-color: white;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  .flex-buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px
+    ;
+  }
+
+  .hover-blanco:hover{
+    background-color: white;
+    transition: 0.5s;
+    border-color: #3191a1;
+  }
+
+  .hover-azul:hover{
+    background-color: #3191a1;
+    transition: 0.5s;
+  }
+
+  .typing-demo {
+    width: 23ch;
+    text-align: center;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: #eceeff;
+    font-family: Kanit;
+    font-size: 1.5em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .rotate{
+    animation: rotate 5.5s linear infinite; 
+  }
+  @keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }
+  
+  
+  /* SPINNER JUST FOR DEMO */
